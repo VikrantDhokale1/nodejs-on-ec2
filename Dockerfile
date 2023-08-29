@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 3000
 
 # Entrypoint command to run the application
-CMD ["node", "index.js"]
+ENTRYPOINT ["node", "index.js"]
