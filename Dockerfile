@@ -1,5 +1,5 @@
 # Use an official Node.js runtime as the base image
-FROM node:10
+FROM node:14.5.0-alpine
 
 # Set the working directory in the container
 WORKDIR /usr/src/app
@@ -16,5 +16,5 @@ COPY . .
 # Expose port 3000
 EXPOSE 3000
 
-# Command to run the application
-CMD ["node", "index.js"]
+# Entrypoint command to run the application
+ENTRYPOINT ["node", "index.js"]
