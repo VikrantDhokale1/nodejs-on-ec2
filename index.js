@@ -4,4 +4,4 @@ var http = require('http');
 http.createServer(function (req, res) {
   res.write('i m joseph kartik......'); //write a response to the client
   res.end(); //end the response
-}).listen(80); //the server object listens on port 4000
+}).listen(3000); //the server object listens on port 4000
