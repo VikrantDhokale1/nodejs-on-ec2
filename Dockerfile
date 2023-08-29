@@ -1,5 +1,5 @@
 # Use an official Node.js runtime as the base image
-FROM node:10
+FROM node:14.5.0-alpine
 
 # Set the working directory in the container
 WORKDIR /usr/src/app
@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 3000
 
 # Entrypoint command to run the application
-ENTRYPOINT ["node", "index.js"]
+CMD ["node", "index.js"]
